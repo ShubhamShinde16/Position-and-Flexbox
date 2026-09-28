@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitLife Mobile UI</title>
+
+    <style>
+        {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #e8e8e8;
+            font-family: Arial, sans-serif;
+        }
+
+        .mobile {
+            width: 360px;
+            min-height: 700px;
+            margin: 30px auto;
+            background-color: #f7f9fc;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px #999999;
+            position: relative;
+        }
+
+        .header {
+            background-color: #263238;
+            color: white;
+            padding: 25px 20px;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 8px 0 0;
+            color: #d5d5d5;
+        }
+
+        .profile {
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            width: 45px;
+            height: 45px;
+            background-color: #ffffff;
+            color: #263238;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .goal {
+            margin: 20px;
+            padding: 20px;
+            background-color: #1976d2;
+            color: white;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .goal h2 {
+            margin: 0 0 8px;
+            font-size: 20px;
+        }
+
+        .goal p {
+            margin: 0;
+        }
+
+        .goal-number {
+            position: absolute;
+            right: 20px;
+            top: 25px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            margin: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #263238;
+        }
+
+        .workouts {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin: 0 20px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: white;
+            padding: 18px 10px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #dddddd;
+        }
+
+        .card:hover {
+            background-color: #e3f2fd;
+            transform: translateY(-3px);
+        }
+
+        .icon {
+            font-size: 30px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 16px;
+        }
+
+        .card p {
+            margin: 0;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .progress {
+            margin: 20px;
+            background-color: white;
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #dddddd;
+        }
+
+        .progress-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-top h3 {
+            margin: 0;
+        }
+
+        .progress-top span {
+            color: #1976d2;
+            font-weight: bold;
+        }
+
+        .bar {
+            height: 10px;
+            background-color: #dddddd;
+            border-radius: 10px;
+            margin-top: 12px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            width: 70%;
+            height: 100%;
+            background-color: #1976d2;
+        }
+
+        .navigation {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 15px 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #dddddd;
+        }
+
+        .nav-item {
+            text-align: center;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .nav-item span {
+            display: block;
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .nav-item:hover {
+            color: #1976d2;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="mobile">
+
+        <div class="header">
+
+            <h1>Good Morning!</h1>
+
+            <p>Ready for today's workout?</p>
+
+            <div class="profile">
+                👤
+            </div>
+
+        </div>
+
+
+        <div class="goal">
+
+            <h2>Today's Goal</h2>
+
+            <p>Complete your daily workout</p>
+
+            <div class="goal-number">
+                30m
+            </div>
+
+        </div>
+
+
+        <h2 class="section-title">
+            Quick Workouts
+        </h2>
+
+
+        <div class="workouts">
+
+            <div class="card">
+
+                <div class="icon">
+                    🏃
+                </div>
+
+                <h3>Running</h3>
+
+                <p>20 min</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    💪
+                </div>
+
+                <h3>Strength</h3>
+
+                <p>30 min</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🧘
+                </div>
+
+                <h3>Yoga</h3>
+
+                <p>15 min</p>
+
+            </div>
+
+        </div>
+
+
+        <h2 class="section-title">
+            Weekly Progress
+        </h2>
+
+
+        <div class="progress">
+
+            <div class="progress-top">
+
+                <h3>Workout Goal</h3>
+
+                <span>70%</span>
+
+            </div>
+
+
+            <div class="bar">
+
+                <div class="bar-fill"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="navigation">
+
+            <div class="nav-item">
+                <span>🏠</span>
+                Home
+            </div>
+
+            <div class="nav-item">
+                <span>🔥</span>
+                Activity
+            </div>
+
+            <div class="nav-item">
+                <span>📊</span>
+                Progress
+            </div>
+
+            <div class="nav-item">
+                <span>👤</span>
+                Profile
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
